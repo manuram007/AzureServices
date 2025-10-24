@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <ApplicationInsightsResourceId>/subscriptions/4faa3f7a-7f05-407e-87ea-5eed5a24eb13/resourceGroups/az-group-rg/providers/microsoft.insights/components/PassengerServicesAPI</ApplicationInsightsResourceId>
+    <UserSecretsId>dae006a7-9eb6-4c76-899c-7cee927b14d2</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.14.2" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+
+</Project>
